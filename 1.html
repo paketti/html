@@ -1,0 +1,100 @@
+<html>
+<head>
+<style type='text/css'>
+/* Текст элемента будет выравнен по левому краю */
+form {position:absolute; top:200px;}
+#ex1 {
+position: absolute;
+top: 40px;
+left: 30px;
+width: 900px;
+height: 150px;
+background-color: #fff;
+text-align:center;
+display: flex;
+flex-direction: row;  
+justify-content: space-around; //comment
+align-items: stretch;
+}
+.ex2, .ex3, .ex4 {
+font-family: Calibri;
+background: grey;
+color: white;
+padding: 10px;
+margin: 5px;
+border-radius: 5px;
+}
+.ex2 {align-self: flex-end; text-align: right; flex-grow: 1;}
+</style>
+</head>
+<body>
+<script>
+function mesg() {
+document.getElementById("ex1").style.backgroundColor="#fff";
+}
+</script>	
+<script>
+function mesg2() {
+document.getElementById("ex1").style.backgroundColor="grey";
+}
+</script>
+<script>
+function none() {
+document.getElementById("frm").style.display='none';
+}
+</script>
+<script>
+function block() {
+document.getElementById("frm").style.display='block';
+}
+</script>
+<input type='button' value='Вызвать функцию' onclick='mesg()' />
+<input type='button' value='Вызвать функцию' onclick='mesg2()' />
+
+<div id='ex1'>
+	<div class='ex2'>жизнь это микросистема подчиненная общим законам</div>
+	<div class='ex3'>жизнь это микросистема</div>
+	<div class='ex4'>жизнь это микросистема</div>
+</div>
+<input type='button' value='Show' onclick='block()' />
+<input type='button' value='Hide' onclick='none()' />
+<form action='1.php'>
+	<div id='frm' style='display:none';>
+	<select>
+	<option>Унылая пора</option>
+	<option>Очей очарованье</option>
+	<option>Приятна мне твоя</option>
+	<option>Прощальная краса</option>
+	</select>
+	</div>
+</br></br>
+	<input type='radio'>
+	<input type='text'><input type='checkbox'><input type='submit'></br></br><input type='radio'>
+	<input type='text'><input type='checkbox'><input type='submit'></br></br><input type='radio'>
+	<input type='text'><input type='checkbox'><input type='submit'></br></br>
+	<input type='checkbox'>
+	<input type='checkbox'>
+	<input type='checkbox'>
+	<input type='radio'>
+	<input type='radio'>
+	<input type='radio'>
+	</br>
+	<input type='file'>
+	</br></br>
+	<input type='date' /><br />
+	</br>
+	<fieldset style="display:inline;">
+   <legend>Работа со временем</legend>
+	 <input type="checkbox"> создание пунктуальности (никогда не 
+	  будете никуда опаздывать);<br>
+	 <input type="checkbox"> излечение от пунктуальности (никогда 
+	  никуда не будете торопиться);<br>
+	 <input type="checkbox"> изменение восприятия времени и часов.
+	</br>
+	 <textarea name="comment" placeholder='Введите Ваш email' style="margin: 9px; width: 530px; height: 100px; clear:both;"></textarea>
+<input type='submit' style="clear:both;"></br>
+  </fieldset>
+
+</form>
+</body>
+</html>

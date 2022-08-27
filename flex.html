@@ -1,0 +1,73 @@
+<html>
+<DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+<style> 
+
+ul {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+	background: green;
+	display: flex;
+	justify-content: flex-end;
+}
+
+li {
+  display: inline;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  width: 70px;
+  margin-right: 2px;
+  height: 70px;
+}
+li::selection { background-color: red;}
+.cont {display: inline-block;
+	width: 20px;
+	height: 0px;
+	border-left: 28px solid #0000;
+	border-right: 28px solid #f000;
+	border-top: 30px solid #0822f6e3;
+	border-bottom: 98px solid #61e524c7;
+}
+.left { 
+  float: left; 
+  shape-outside: polygon(0 0, 0 300px, 200px 300px); 
+  clip-path: polygon(0 0, 0 300px, 200px 300px); 
+  background: linear-gradient(to top right, #67D7F5, #86F7CC); 
+  height: 100px; 
+  width: 100px; 
+}
+/*.right { 
+  float: right; 
+  shape-outside: polygon(200px 300px, 300px 300px, 300px 0, 0 0); 
+  clip-path: polygon(200px 300px, 300px 300px, 300px 0, 0 0); 
+  background: linear-gradient(to bottom left, #67D7F5, #86F7CC); 
+  height: 100px; 
+  width: 100px; 
+}*/
+</style>
+</head>
+<body>
+<ul>
+  <li id="one">1</li>
+  <li id="two">2</li>
+  <li id="three">3</li>
+</ul>
+<div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div><div class="cont"></div>
+<h1>HTML - язык для разметки гипертекста.</h1><p><h2>Гипертекст</h2> - это текст с гиперссылками, которые связывают разные части текста, друг с другом или с текстом в другом документе.</p><p>Гипертекстовый документ - это совокупность текстовых документов сзвязанных между собой гиперссылками.</p><p>Гиперссылка - это часть гипертекста ссылающаяся на другую часть гипертекста. При активизации <a href=http://google.com target=_blank>гиперссылки</a> происходит переход от исходного гипертекста к целевому.</p>
+<h1 style="text-shadow: 0 1px 0 #eee, 3px 3px 3px #000;">CSS - язык для оформления гипертекста.</h1><img src='05.jpg' width="250px" heght="182,5px"><video controls="controls" src='Microsoft hardware.mp4' width=40% height=40%></video>
+<iframe width="160" height="90" src="https://www.youtube.com/embed/osbbcmvFwDY"></iframe>
+
+<div class="cont"></div>
+
+<div class="left"></div> 
+<!-- <div class="right"></div>  -->
+<p>Пример текста...</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>:nth-last-of-type()</title>
+  <style>
+   button {
+    background: #f05347; /* Красный цвет фона */
+    color: #fff; /* Белый текст */
+    display: inline-block; /* По ширине содержимого */
+    padding: 0.5rem 1rem; /* Поля вокруг текста */
+    border: none;
+   }
+   button:focus ~ p {
+    display: block; /* Показываем абзацы */
+   }
+   p:nth-last-of-type(1) {
+    display: none; /* Прячем последний абзац */
+   }
+  </style>
+ </head>
+ <body>
+  <section>
+   <h2>Жизненные советы</h2>
+   <p>Если вас третий день подряд клонит в сон —
+   значит, сегодня среда.</p>
+   <button>Ещё совет</button>
+   <p>Нет такого совета, который нельзя было бы дать.</p>
+  </section>
+ </body>
+</html>

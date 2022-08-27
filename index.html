@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Sorax</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"
+>
+<link type="text/css" href="js/css/smoothness/jquery-ui-1.10.4.custom.css" rel="Stylesheet"/>
+<script type="text/javascript" src="js/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/js/jquery-ui-1.10.4.custom.js"></script>
+
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<script type='text/javascript'>
+otstupSleva = 0
+otstupSverkhu = 0
+</script>
+<script>
+   function sizePic() {
+	size = document.getElementById("size").value;
+	img = document.getElementById("pic");
+	img.width = 60 + 20*size;
+   }
+  </script>
+ <script>
+ function My_func(){
+	document.write ("<h1>Не надо</h1>")
+ }
+ </script>                  
+</script> 
+<script type='text/javascript'>
+function change(){
+   document.getElementById('par').innerHTML='Также я изучаю HTML DOM на <b>wisdomweb.ru</b>!';
+}
+function changeback(){
+   document.getElementById('par').innerHTML='А это новый текст. "Я изучаю JavaScript"';
+}
+</script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+   $("#but1").click(function(){
+	  $("p").animate({fontSize:20},2000);
+	  $("p").animate({top:220},2000);
+	  $("p").animate({fontSize:"1em"},2000);
+	  $("p").animate({left:320},2000);
+	  $("p").animate({top:0,left:0},2000);
+   });
+});
+</script> 
+<script type="text/javascript">   
+$(document).ready(function(){
+  
+   $("#but3").click(function(){
+	  $("p").hide(100);
+   });
+   $("#but4").click(function(){
+	  $("p").show(100);
+   });
+
+});                                           
+</script> 
+<style type="text/css">
+#tabs
+{font-size:0.5em; width:800px;}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+
+   $("#tabs").tabs();
+
+});
+</script>
+<style type="text/css">
+#tabs
+{
+font-size:0.9em;
+height:300px;
+}
+#tabs-1,#tabs-2,#tabs-3,#tabs-4
+{
+font-size:0.7em;
+}
+#load
+{
+margin-left:300px;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+$("#tabs").tabs();
+//Код первой вкладки (стандартное использование)
+   $("#tab1").tabs();
+//Код второй вкладки (удаленные вкладки)
+   $("#tab2").tabs({show:function(e,ui){if (ui.index!=0){ $(ui.panel).html("<img id='load' src='tab-load1.gif' />")}}});
+//Код третьей вкладки (сворачивание активной вкладки)
+   $("#tab3").tabs({collapsible:true,selected:-1});
+//Код четвертой вкладки (открытие при наведении)
+   $("#tab4").tabs({event:"mouseover"});
+
+});
+</script>
+<style type="text/css">
+#accordion
+{font-size:0.6em; width:700px;}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+   $("#accordion").accordion();
+});
+</script>
+<style type="text/css">
+#tabs-a
+{font-size:0.5em;width:400px;}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+
+   $("#tabs-a").tabs();
+
+});
+</script>
+</head>
+<body>
+<script>
+var string = "Кудра бодланула бокра";
+console.log(string.length);
+console.log(string.charAt(string.length - 1));
+console.log(screen.width, screen.height);
+console.log(navigator);
+</script>
+
+<div id="header">
+	<div id="navigation">
+		<ul id="menu">
+			<li><a href="">Сумки</a></li>
+			<li><a href="">Обувь</a></li>
+			<li><a href="">Шарфы</a></li>
+			<li><a href="">Одежда</a></li>           
+			<li><a href="">Аксессуары</a></li>
+		</ul>
+	</div>
+</div>
+<div id="n">
+	 <ul id="nav">
+	  <li>Главная</li>
+	  <li>О нас</li>
+	  <li>Доставка</li> 
+	  <li>Контакты</li>
+	</ul>
+</div>
+ <section class="regular slider autoplay">
+	<div>
+	  <img width="400px" src="05.jpg">
+	</div>
+	<div>
+		<img width="315px" src="img7.jpg">
+	</div>
+	<div>
+	  <img width="520px" src="vlcsnap-2013-01-21-21h29m23s72.jpg">
+	</div>
+	<div>
+	  <img width="510px" src="vlcsnap-2012-03-27-00h41m56s15.png">
+	</div>
+	<div>
+	  <img width="686px" src="img8.jpg">
+	</div>
+	<div>
+	  <img width="565px" src="slide1.jpg">
+	</div>
+  </section>
+  
+  <script type="text/javascript">
+  $(document).on('ready', function() {
+	$('.autoplay').slick({
+	  dots: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 3000,
+	});
+  });
+</script>
+<div id='el1'>
+<div id='el2'>С помощью CSS3 свойства transform Вы можете трансформировать элементы. В качестве значения данного свойства должна указываться одна из функций трансформирования. Позиция после применения translate(180px,180px)
+<video src="Microsoft hardware.mp4" width='200' height='120' controls='controls'></video>
+</div>
+<div id='el3'>С помощью CSS3 свойства transform Вы можете трансформировать элементы. В качестве значения данного свойства должна указываться одна из функций трансформирования. Позиция после применения translate(180px,180px)
+<iframe width="200" height="120" src="https://www.youtube.com/watch?v=7rcGTmfT3b8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+<audio src="2014-06-20-osoboe-1907.mp3" controls='controls'></audio>
+<div class="tr">
+	<div id="title1">Чебурашка</div>
+	<div id="title2">Гена</div>
+	<div id="title3">Шапокляк</div>
+  </div>
+<hr width="780" color="#cc0000">
+<p style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size: 12px; color: #666;">"Представьте себе любого ребенка в мире - неважно, откуда - который мог бы получить доступ к знаниям, - говорит Леннон. -  Он мог бы получить шанс учиться, мечтать, получить все, что хочет. Я пытался сделать это с помощью музыки, но теперь вы можете сделать это иначе: вы можете дать ребенку ноутбук - и это будет больше, чем воображение. Вы можете <a href="http://ya.ru/">изменить мир</a></p>
+<h2 style="text-align: left; color: #09C;">John Lennon</h2>
+<div id="cow">
+<div class="free">
+
+  <div class="flex">
+	<div id="col1">Отряд мягкотелых, семейство лопоухих.<br>Это
+	безобидное пушистое животное ныне находится на грани исчезновения, Отряд мягкотелых, семейство лопоухих.<br>Это
+	безобидное пушистое животное ныне находится на грани исчезновения, Отряд мягкотелых, семейство лопоухих.<br>Это
+	безобидное пушистое животное ныне находится на грани исчезновения, Отряд мягкотелых, семейство лопоухих.<br>Это
+	безобидное пушистое животное ныне находится на грани исчезновения, Отряд мягкотелых, семейство лопоухих.<br>Это
+	безобидное пушистое животное ныне находится на грани исчезновения, Отряд мягкотелых, семейство лопоухих.<br>Это
+  </div>
+	<div id="col2">Отряд длинномордых, семейство зеленых.<br>Хищник.
+	Охотится на охотников, охотившихся за чебурашками. Ошибочно причисляется некоторыми
+	авторами к отряду земноводных. Не имеет ничего общего с крокодилами.Отряд длинномордых, семейство зеленых.<br>Хищник.
+	Охотится на охотников, охотившихся за чебурашками. Ошибочно причисляется некоторыми
+	авторами к отряду земноводных. Не имеет ничего общего с крокодилами.Отряд длинномордых, семейство зеленых.<br>Хищник.
+	Охотится на охотников, охотившихся за чебурашками. Ошибочно причисляется некоторыми
+	авторами к отряду земноводных. Не имеет ничего общего с крокодилами.Отряд длинномордых, семейство зеленых.<br>Хищник.
+	Охотится на охотников, охотившихся за чебурашками. Ошибочно причисляется некоторыми
+	авторами к отряду земноводных. Не имеет ничего общего с крокодилами.Отряд длинномордых, семейство зеленых.<br>Хищник.
+	</div>
+	<div id="col3">Отряд бабок, семейство вонючевредных.<br>Очень
+	опасное существо из-за особенностей развития в пубертарном периоде. Является
+	симбионтом с животным crysa larisa.Отряд бабок, семейство вонючевредных.<br>Очень
+	опасное существо из-за особенностей развития в пубертарном периоде. Является
+	симбионтом с животным crysa larisa.Отряд бабок, семейство вонючевредных.<br>Очень
+	опасное существо из-за особенностей развития в пубертарном периоде. Является
+	симбионтом с животным crysa larisa.Отряд бабок, семейство вонючевредных.<br>Очень
+	опасное существо из-за особенностей развития в пубертарном периоде. Является
+	</div>
+  </div>
+<div class="grid">
+  <div class="span-row-3">Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 1Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 1Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 1Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 1Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 1Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 1</div>
+  <div class="trans">Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 2Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 2Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 2Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 2Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 2Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 2</div>
+  <div>Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 3</div>
+  <div class="span-col-2 span-row-2">Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 4</div>
+  <div>Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 5</div>
+  <div>Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per, his ad regione singulis scriptorem. Sit an erroribus adipiscing. No amet ridens pri, duo persecuti adolescens no. 6</div>
+</div>
+	<div id="draggable">
+			<div id="wrapper">
+				<video src="Microsoft hardware.mp4" width='300' height='200' controls='controls'></video>
+				<video width="300" height="200" controls="controls">
+				<source src="http://www.wisdomweb.ru/editor/mountvideo.ogv" type="video/ogg" />
+				</video> 
+			</div>
+	 </div>
+	 <div id="draggable2">
+			<div id="wrapper2">
+				<audio src="2014-06-20-osoboe-1907.mp3" controls='controls'></audio>
+			</div>
+	 </div>
+	
+<h2 onclick="My_func()">Попробуй JavaScript</h2>
+	<div id="wrapper">
+	<div id="container">Hello CSS transforms</div>
+</div>
+
+<div class="lennon">
+  <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/4b4GkGMiBDQ&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=player_embedded&amp;fs=1"><param name="allowFullScreen" value="true"><embed src="http://www.youtube.com/v/4b4GkGMiBDQ&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en&amp;feature=player_embedded&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></object>
+<vr width="1280" color="#cc0000">
+</vr></div>
+
+
+	<form name="myForm">
+		Имя:<input type="text" name="email" value="Имя">
+		<input type="button" name="myButton" value="Нажми меня">
+		<textarea name="comment" style="margin: 9px; width: 300 px; height: 100 px;"></textarea>
+		<input type="password" атрибуты>
+		<fieldset>
+   <legend>Работа со временем</legend>
+	 <input type="checkbox"> создание пунктуальности (никогда не 
+	  будете никуда опаздывать);<br>
+	 <input type="checkbox"> излечение от пунктуальности (никогда 
+	  никуда не будете торопиться);<br>
+	 <input type="checkbox"> изменение восприятия времени и часов.
+	  <p><input type="submit"></p>
+  </fieldset>
+  <p><strong>Выбери персонажа</strong></p>
+   <p><select name="hero">
+	<option value="s1">Чебурашка</option>
+	<option value="s2" selected>Крокодил Гена</option>
+	<option value="s3">Шапокляк</option>
+	<option value="s3" label="Лариса">Крыса Лариса</option>
+   </select> 
+   <p><b>Какое у вас состояние разума?</b></p>
+	<p><input name="dzen" type="radio" value="nedzen"> Не дзен</p>
+	<p><input name="dzen" type="radio" value="dzen"> Дзен</p>
+	<p><input name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
+	<p><input type="submit" value="Выбрать"></p>
+	<p>Укажите цвет фона: <input type="color" name="bg" value="#ff0000">
+   <input type="submit" value="Выбрать"></p>
+	 <p>Укажите нормальную среднюю температуру человека:</p>
+   <p><input type="number" name="t" value="35" min="35" max="40" step="0.7"></p>
+	</form>
+
+	<p>Размер рисунка: <input type="range" min="1" max="5" id="size" 
+	 oninput="sizePic()" value="3"></p>
+  <p><img src="2/figure.jpg" alt="" id="pic"></p>
+<input name='color' type='color' />
+</div>
+<div id="wrapper">
+	<p><input name="login" placeholder="Логин"></p>
+   <p><input name="pass" type="password" placeholder="Пароль"></p>
+   <p><input type="submit" value="Вход"></p>
+</div>
+<script>
+ $("#draggable").dialog();
+ $("#draggable2").dialog();
+ </script>
+ <div class="tr">
+	
+	<div id="col2">Отряд длинномордых, семейство зеленых.<br>Хищник.
+	Охотится на охотников, охотившихся за чебурашками. Ошибочно причисляется некоторыми
+	авторами к отряду земноводных. Не имеет ничего общего с крокодилами.</div>
+	
+  </div>
+  <div class="container">123</div>
+
+<div>
+<p id='par'> Я изучаю JavaScript.</p>
+<input type='button' onclick='change()' value='Изменить текст абзаца'/>
+<input type='button' onclick='changeback()' value='Вернуть первоначальный текст'/>
+</div>
+</br>
+<button  onclick="otstupSverkhu-= 10;document.getElementById('111').style.marginTop = otstupSverkhu;">Top</button>
+</br>
+<button onclick="otstupSleva -= 10; document.getElementById('111').style.marginLeft = otstupSleva;">Left</button>
+<button onclick="otstupSleva += 10; document.getElementById('111').style.marginLeft = otstupSleva;">Right</button>
+</br>
+<button  onclick="otstupSverkhu+= 10; 
+document.getElementById('111').style.marginTop = otstupSverkhu;">Bottom</button>
+<div id="111" style="margin-top: 100px;  width:200px; height:100px; background:linear-gradient(#f4f4f4, #cccccc);"></div>
+<input id="but1" type="button" value="Начать анимацию" />
+<p id="par1">Это абзац, к которому будет применена анимация.</p>
+<p><b>Я первый абзац на странице.</b></p>
+<input id="but3" type="button" value="Скрыть абзац" />
+<input id="but4" type="button" value="Отобразить абзац" />
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1">Стандартное использование</a></li>
+<li><a href="#tabs-2">Удаленные</a></li>
+<li><a href="#tabs-3">Сворачивание активной</a></li>
+<li><a href="#tabs-4">Открытие при наведении</a></li>
+</ul>
+<div id="tabs-1">
+<p>Вы можете переключать вкладки виджета ниже щелкая на них мышкой.</p>
+<div id="tab1">
+<ul>
+<li><a href="#tabs1">Медведи</a></li>
+<li><a href="#tabs2">Белки</a></li>
+<li><a href="#tabs3">Лисы</a></li>
+</ul>
+<div id="tabs1">
+<p><b>Медведи</b> (<i>лат. Ursus</i>) — род млекопитающих отряда хищных.</p>
+<p>Согласно палеонтологическим сведениям, род медведей появился 5-6 миллионов лет назад. Первым его представителем в настоящее 
+время считают медведя <i>Ursus minimus</i> — относительно небольшое животное, чьи ископаемые останки найдены на территории Франции.
+ Все современные четыре вида рода, а также ряд вымерших (таких, например, как пещерный медведь <i>Ursus spelaeus</i>) происходят 
+от этрусского медведя (<i>Ursus etruscus</i>), жившего 2-1 миллиона лет назад.</p>
+<p>Самым молодым видом рода является белый медведь, который отделился от бурого медведя примерно 200 000 лет назад.</p>
+</div>
+<div id="tabs2">
+<p><b>Белки</b> (<i>лат. Sciurus</i>) — род грызунов семейства беличьих. Кроме собственно рода <i>Sciurus</i>, белками называют ещё целый 
+ряд представителей семейства беличьих из родов бурундуковые белки (<i>Tamiasciurus</i>), пальмовые белки (<i>Funambulus</i>) и многих других. 
+Что касается собственно рода Sciurus, то он объединяет в себя около 30 видов, распространённых в Европе, Северной и Южной Америке 
+и в умеренном поясе Азии.</p>
+<p>Имеет удлинённое тело с пушистым длинным хвостом, уши длинные, цвет темно-бурый с белым брюшком, иногда серый (особенно зимой).
+ Водятся повсюду, кроме Австралии. Белка является источником ценного меха.</p>
+</div>
+<div id="tabs3">
+<p><b>Обыкновенная, или рыжая лисица</b> (<i>лат. Vulpes vulpes</i>) — хищное млекопитающее семейства псовых, наиболее распространённый и самый крупный вид рода лисиц. Длина тела 60—90 см, хвоста — 40—60 см, масса — 6—10 кг.</p>
+<p>Окраска и размеры лисиц различны в разных местностях; всего насчитывают 40—50 подвидов, не учитывая более мелких форм. В общем, при продвижении на север лисицы становятся более крупными и светлыми, на юг — мелкими и более тускло окрашенными. Наиболее распространённый окрас: ярко-рыжая спина, белое брюхо, тёмные лапы.  Общие отличительные черты: тёмные уши и белый кончик хвоста. Внешне лисица представляет собой зверя среднего размера с изящным туловищем на невысоких лапах, с вытянутой мордой, острыми ушами и длинным пушистым хвостом.</p>
+</div>
+</div>
+</div>
+<div id="tabs-2">
+<p>Содержимое второй и третьей вкладки не заданно в коде страницы явно, а загружается из удаленных файлов с помощью AJAX запросов.</p>
+<div id="tab2">
+<ul>
+<li><a href="#tabs4">Локальное содержимое</a></li>
+<li><a href="content1.html">Удаленное содержимое 1 </a></li>
+<li><a href="content2.html">Удаленное содержимое 2</a></li>
+</ul>
+<div id="tabs4">
+<p><b>Медведи</b> (<i>лат. Ursus</i>) — род млекопитающих отряда хищных.</p>
+<p>Согласно палеонтологическим сведениям, род медведей появился 5-6 миллионов лет назад. Первым его представителем в настоящее 
+время считают медведя <i>Ursus minimus</i> — относительно небольшое животное, чьи ископаемые останки найдены на территории Франции.
+ Все современные четыре вида рода, а также ряд вымерших (таких, например, как пещерный медведь <i>Ursus spelaeus</i>) происходят 
+от этрусского медведя (<i>Ursus etruscus</i>), жившего 2-1 миллиона лет назад.</p>
+<p>Самым молодым видом рода является белый медведь, который отделился от бурого медведя примерно 200 000 лет назад.</p>
+</div>
+</div>
+</div>
+<div id="tabs-3">
+<p>Активная вкладка виджета ниже может быть свернута. Таким образом данный виджет может быть отображен без развернутых вкладок.</p>
+<div id="tab3">
+<ul>
+<li><a href="#tabs1">Медведи</a></li>
+<li><a href="#tabs2">Белки</a></li>
+<li><a href="#tabs3">Лисы</a></li>
+</ul>
+<div id="tabs1">
+<p><b>Медведи</b> (<i>лат. Ursus</i>) — род млекопитающих отряда хищных.</p>
+<p>Согласно палеонтологическим сведениям, род медведей появился 5-6 миллионов лет назад. Первым его представителем в настоящее 
+время считают медведя <i>Ursus minimus</i> — относительно небольшое животное, чьи ископаемые останки найдены на территории Франции.
+ Все современные четыре вида рода, а также ряд вымерших (таких, например, как пещерный медведь <i>Ursus spelaeus</i>) происходят 
+от этрусского медведя (<i>Ursus etruscus</i>), жившего 2-1 миллиона лет назад.</p>
+<p>Самым молодым видом рода является белый медведь, который отделился от бурого медведя примерно 200 000 лет назад.</p>
+</div>
+<div id="tabs2">
+<p><b>Белки</b> (<i>лат. Sciurus</i>) — род грызунов семейства беличьих. Кроме собственно рода <i>Sciurus</i>, белками называют ещё целый 
+ряд представителей семейства беличьих из родов бурундуковые белки (<i>Tamiasciurus</i>), пальмовые белки (<i>Funambulus</i>) и многих других. 
+Что касается собственно рода Sciurus, то он объединяет в себя около 30 видов, распространённых в Европе, Северной и Южной Америке 
+и в умеренном поясе Азии.</p>
+<p>Имеет удлинённое тело с пушистым длинным хвостом, уши длинные, цвет темно-бурый с белым брюшком, иногда серый (особенно зимой).
+ Водятся повсюду, кроме Австралии. Белка является источником ценного меха.</p>
+</div>
+<div id="tabs3">
+<p><b>Обыкновенная, или рыжая лисица</b> (<i>лат. Vulpes vulpes</i>) — хищное млекопитающее семейства псовых, наиболее распространённый и самый крупный вид рода лисиц. Длина тела 60—90 см, хвоста — 40—60 см, масса — 6—10 кг.</p>
+<p>Окраска и размеры лисиц различны в разных местностях; всего насчитывают 40—50 подвидов, не учитывая более мелких форм. В общем, при продвижении на север лисицы становятся более крупными и светлыми, на юг — мелкими и более тускло окрашенными. Наиболее распространённый окрас: ярко-рыжая спина, белое брюхо, тёмные лапы.  Общие отличительные черты: тёмные уши и белый кончик хвоста. Внешне лисица представляет собой зверя среднего размера с изящным туловищем на невысоких лапах, с вытянутой мордой, острыми ушами и длинным пушистым хвостом.</p>
+</div>
+</div>
+</div>
+<div id="tabs-4">
+<p>Вкладки виджета ниже будут открываться при наведении на них курсора мыши.</p>
+<div id="tab4">
+<ul>
+<li><a href="#tabs1">Медведи</a></li>
+<li><a href="#tabs2">Белки</a></li>
+<li><a href="#tabs3">Лисы</a></li>
+</ul>
+<div id="tabs1">
+<p><b>Медведи</b> (<i>лат. Ursus</i>) — род млекопитающих отряда хищных.</p>
+<p>Согласно палеонтологическим сведениям, род медведей появился 5-6 миллионов лет назад. Первым его представителем в настоящее 
+время считают медведя <i>Ursus minimus</i> — относительно небольшое животное, чьи ископаемые останки найдены на территории Франции.
+ Все современные четыре вида рода, а также ряд вымерших (таких, например, как пещерный медведь <i>Ursus spelaeus</i>) происходят 
+от этрусского медведя (<i>Ursus etruscus</i>), жившего 2-1 миллиона лет назад.</p>
+<p>Самым молодым видом рода является белый медведь, который отделился от бурого медведя примерно 200 000 лет назад.</p>
+</div>
+<div id="tabs2">
+<p><b>Белки</b> (<i>лат. Sciurus</i>) — род грызунов семейства беличьих. Кроме собственно рода <i>Sciurus</i>, белками называют ещё целый 
+ряд представителей семейства беличьих из родов бурундуковые белки (<i>Tamiasciurus</i>), пальмовые белки (<i>Funambulus</i>) и многих других. 
+Что касается собственно рода Sciurus, то он объединяет в себя около 30 видов, распространённых в Европе, Северной и Южной Америке 
+и в умеренном поясе Азии.</p>
+<p>Имеет удлинённое тело с пушистым длинным хвостом, уши длинные, цвет темно-бурый с белым брюшком, иногда серый (особенно зимой).
+ Водятся повсюду, кроме Австралии. Белка является источником ценного меха.</p>
+</div>
+<div id="tabs3">
+<p><b>Обыкновенная, или рыжая лисица</b> (<i>лат. Vulpes vulpes</i>) — хищное млекопитающее семейства псовых, наиболее распространённый и самый крупный вид рода лисиц. Длина тела 60—90 см, хвоста — 40—60 см, масса — 6—10 кг.</p>
+<p>Окраска и размеры лисиц различны в разных местностях; всего насчитывают 40—50 подвидов, не учитывая более мелких форм. В общем, при продвижении на север лисицы становятся более крупными и светлыми, на юг — мелкими и более тускло окрашенными. Наиболее распространённый окрас: ярко-рыжая спина, белое брюхо, тёмные лапы.  Общие отличительные черты: тёмные уши и белый кончик хвоста. Внешне лисица представляет собой зверя среднего размера с изящным туловищем на невысоких лапах, с вытянутой мордой, острыми ушами и длинным пушистым хвостом.</p>
+</div>
+</div>
+</div>
+</div>
+<svg class="svg" id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 439.19 541.33"><title>serg</title><path d="M325.6,124a1.3,1.3,0,1,0,1.3,1.3A1.32,1.32,0,0,0,325.6,124Z" transform="translate(0.15 -0.02)" style="fill:#201600"/><path d="M254,538.7a1.2,1.2,0,0,0,.9,1.2c28,5.8,50.3-16,66.3-35.9,9.2-11.5,18.1-23.5,29.8-32.7a103.28,103.28,0,0,1,86-19.4,1.21,1.21,0,0,0,1.5-.9,1.41,1.41,0,0,0-.1-0.9c-6.4-13.1-6.3-27.9-8.2-42.1-1.7-12.6-5.5-23.6-14.1-33.1-9.4-10.5-21-19.3-21-34.7,0-8.1,1.9-16,1.5-24.2a63,63,0,0,0-4.6-20.5c-2.7-6.6-7-12.4-9.6-19-3.2-7.8-2.2-15.6,2.2-22.7,7.5-12.1,20.6-18.5,30.6-28.2,9.7-9.5,13.4-20.8,10.6-34.2-1.7-7.9-4.7-15.6-7.2-23.3l-8.2-24.9c-8.9-26.9-16.8-54.7-30.9-79.4-13.7-24-33.6-41.3-59.8-50.3C291.7,4,260.3-.1,231,0.6c-28.9.7-57.2,8-80.9,25.1-22.6,16.4-39.8,38.8-56,61.2-8.7,11.9-18.3,24-22.4,38.4-2.3,8-2.8,16.3-5.8,24.1-3.2,8.2-7.7,15.9-11.8,23.7L42.2,195.7a1.36,1.36,0,0,0,.4,1.7l32,13.7c-4.7,9.1-5.2,19.3-5.4,29.4A151.71,151.71,0,0,1,65,274.7a145.53,145.53,0,0,1-30.2,59c-7.1,8.4-15.4,15.1-23.6,22.3C4.9,361.6-1.2,369,.7,378s10.4,16.5,16.9,22.5c6.9,6.3,15.2,12.2,24.9,12.1,11.9-.1,20.6-9.1,29.6-15.5,5.5-3.9,12.1-8,19.2-7.3,6.9,0.6,13.6,5.7,13.2,13.1a1.32,1.32,0,0,0,1.3,1.3h0.3c8.8-2.3,16.7,4.5,19.4,12.5,2.5,7.6,1.4,15.8.5,23.6a1.4,1.4,0,0,0,1.3,1.3,104.43,104.43,0,0,1,55.5,22.9,1.27,1.27,0,0,0,1.8,0,206.1,206.1,0,0,1,57.5-46.3c3.4-1.8,6.8-3.6,10.3-5.2,2.2-1,4.5-2.4,7-2.6,0.9-.1,6.7,0,5.5,2.8-0.3.7-7.1,3.6-6.6,3.9" transform="translate(0.15 -0.02)" style="fill:none;stroke:#201600;stroke-miterlimit:10"/><path d="M271.9,423.5c0.5,0.3-5.1-8.6-4.7-9.4,2.4-5.4-4.7-7.1-8.7-6.4s-8,3.2-11.6,5c-4.9,2.5-9.8,5.1-14.5,8a212.21,212.21,0,0,0-48.7,40.9A106.53,106.53,0,0,0,128.9,439c1.2-9.6,2.2-20.5-3.5-28.9-4-6.1-10.9-10-18.1-8.8-0.4-6.9-6.2-12-12.8-13.6-9-2.2-17.7,3-24.6,8.2-9.1,6.8-18.7,16.1-31.2,13.9-11.4-2-20.4-11.8-27.8-20-3.8-4.2-7.7-9.2-7.8-15.1-0.1-6.6,4.5-11.7,9-15.9,7.6-7,15.7-13.1,22.6-20.9A147.79,147.79,0,0,0,65,284.5a142.41,142.41,0,0,0,6.4-34.2c0.8-13.2-.8-27.1,6.1-39.1a1.36,1.36,0,0,0-.4-1.7l-32-13.7c7.5-14.2,15.9-28.2,22.2-42.9,2.9-6.6,4.1-13.5,5.5-20.5a69.9,69.9,0,0,1,8.9-22.8C89,96.9,98.1,85.2,107,73.7a268,268,0,0,1,28.1-32.1A135,135,0,0,1,214,4.3c29.5-3.5,60.3.2,89.1,7.1,14.8,3.6,29.5,8.8,42.1,17.5,11.3,7.8,20.6,18.2,28,29.7,15.1,23.5,23.1,50.7,31.8,77,5.3,15.9,10.7,31.7,15.7,47.7,2.5,8,4.7,16.6,2.5,24.9-1.9,6.9-6.5,12.5-11.7,17.2-9.5,8.7-21.1,15-28.5,25.9-7.1,10.5-6.1,21.2-.3,32,3.7,6.9,7.4,13.4,9.4,21.1a66.92,66.92,0,0,1,1.3,24c-0.8,7.1-1.8,14.5.3,21.5a38.71,38.71,0,0,0,7.4,12.9c8.6,10.4,19.3,18.1,23.6,31.4,4.1,12.7,3.7,26.2,5.9,39.2a68.94,68.94,0,0,0,4.5,15.5c-34-6.8-70.4,3.9-95,28.6-14.4,14.5-24.7,32.7-40.5,45.8-8,6.7-17.4,12.1-27.7,14.2-2.6.5-13.3,2.3-15.2-.3-1-1.4-.5-5.5-0.5-7.2v-9.6a301.57,301.57,0,0,1,7.9-62.8l-0.3,3.4c-0.1,1.6,2.4,1.6,2.5,0l1.8-19a1.06,1.06,0,0,0-1-1.2" transform="translate(0.15 -0.02)" style="fill:none;stroke:#999896;stroke-miterlimit:10;stroke-width:0.75px"/><path d="M100.3,193.8a1.37,1.37,0,0,0-1.8-.1,1.36,1.36,0,0,0-.2,1.6c4.5,7.6,8.6,15.8,13.6,23.1,3.9,5.7,8.4,4.9,14.5,3.8,8.5-1.5,15.4,3,21.2,9.3a5.59,5.59,0,0,0-3.5-.9c-5,.8-7,8-12.4,7.1-3.3-.5-7.1-3.6-10.1-5.2l-10.9-5.9a1.28,1.28,0,0,0-1.7.5,1.41,1.41,0,0,0-.1.9,62.92,62.92,0,0,0,17.8,33.2" transform="translate(0.15 -0.02)" style="fill:none;stroke:#000103;stroke-miterlimit:10"/><path d="M165.2,252.3a53.63,53.63,0,0,0-6.9-10.6c-5.6-8.6-12.1-17.4-21.2-21a17.36,17.36,0,0,0-7.8-1.3c-4.9.3-9.7,3.1-13.8-.7-3.3-3-5.3-8.1-7.6-12l-0.8-1.3,0.1,0.1" transform="translate(0.15 -0.02)" style="fill:none;stroke:#000103;stroke-miterlimit:10"/><path d="M118.4,237.5a63.36,63.36,0,0,1,7.2,19.3,59.3,59.3,0,0,1-13.8-26.5c5.3,2.9,10.6,5.9,16.1,8.6,3.5,1.7,6.2,2.2,9.5-.2,1.6-1.1,2.7-2.8,4.3-3.9,3.8-2.7,6.9.7,9.7,3.3a49.85,49.85,0,0,1,5,5.3c2.4,3.6,4.5,7.2,6.5,10.1" transform="translate(0.15 -0.02)" style="fill:none;stroke:#000103;stroke-miterlimit:10"/></svg>
+<div id="accordion">
+<h2><a href="#">Êðîêîäèëû</a></h2>
+<div>
+<p><b>Ìåäâåäè</b> (ëàò. Ursus) — ðîä ìëåêîïèòàþùèõ îòðÿäà õèùíûõ.</p>
+<iframe src="http://kremlin.ru/misc/52588/videos/3242" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+<p>Ñîãëàñíî ïàëåîíòîëîãè÷åñêèì ñâåäåíèÿì, ðîä ìåäâåäåé ïîÿâèëñÿ 5-6 ìèëëèîíîâ ëåò íàçàä. Ïåðâûì åãî ïðåäñòàâèòåëåì â íàñòîÿùåå 
+âðåìÿ ñ÷èòàþò ìåäâåäÿ Ursus minimus — îòíîñèòåëüíî íåáîëüøîå æèâîòíîå, ÷üè èñêîïàåìûå îñòàíêè íàéäåíû íà òåððèòîðèè Ôðàíöèè.
+ Âñå ñîâðåìåííûå ÷åòûðå âèäà ðîäà, à òàêæå ðÿä âûìåðøèõ (òàêèõ, íàïðèìåð, êàê ïåùåðíûé ìåäâåäü Ursus spelaeus) ïðîèñõîäÿò 
+îò ýòðóññêîãî ìåäâåäÿ (Ursus etruscus), æèâøåãî 2-1 ìèëëèîíà ëåò íàçàä.</p>
+<p>Ñàìûì ìîëîäûì âèäîì ðîäà ÿâëÿåòñÿ áåëûé ìåäâåäü, êîòîðûé îòäåëèëñÿ îò áóðîãî ìåäâåäÿ ïðèìåðíî 200 000 ëåò íàçàä.</p>
+<div id="tabs-a">
+<ul>
+<li><a href="#tabs-a-1">Медведи</a></li>
+<li><a href="#tabs-a-2">Белки</a></li>
+<li><a href="#tabs-a-3">Лисы</a></li>
+</ul>
+<div id="tabs-a-1">
+<p><b>Медведи</b> (лат. Ursus) — род млекопитающих отряда хищных.</p>
+<p>Согласно палеонтологическим сведениям, род медведей появился 5-6 миллионов лет назад. Первым его представителем в настоящее время считают медведя Ursus minimus — относительно небольшое животное, чьи ископаемые останки найдены на территории Франции. Все современные четыре вида рода, а также ряд вымерших (таких, например, как пещерный медведь Ursus spelaeus) происходят от этрусского медведя (Ursus etruscus), жившего 2-1 миллиона лет назад.</p>
+<p>Самым молодым видом рода является белый медведь, который отделился от бурого медведя примерно 200 000 лет назад.</p>
+</div>
+<div id="tabs-a-2">
+<p><b>Белки</b> (лат. Sciurus) — род грызунов семейства беличьих. Кроме собственно рода Sciurus, белками называют ещё целый ряд представителей семейства беличьих из родов бурундуковые белки (Tamiasciurus), пальмовые белки (Funambulus) и многих других. Что касается собственно рода Sciurus, то он объединяет в себя около 30 видов, распространённых в Европе, Северной и Южной Америке и в умеренном поясе Азии.</p>
+<p>Имеет удлинённое тело с пушистым длинным хвостом, уши длинные, цвет темно-бурый с белым брюшком, иногда серый (особенно зимой). Водятся повсюду, кроме Австралии. Белка является источником ценного меха.</p>
+</div>
+<div id="tabs-a-3">
+<p><b>Обыкновенная, или рыжая лисица</b> (лат. Vulpes vulpes) — хищное млекопитающее семейства псовых, наиболее распространённый и самый крупный вид рода лисиц. Длина тела 60—90 см, хвоста — 40—60 см, масса — 6—10 кг.</p>
+<p>Окраска и размеры лисиц различны в разных местностях; всего насчитывают 40—50 подвидов, не учитывая более мелких форм. В общем, при продвижении на север лисицы становятся более крупными и светлыми, на юг — мелкими и более тускло окрашенными. В северных районах и в горах также чаще встречаются чёрно-бурые и другие меланистические формы окраски лисиц. Наиболее распространённый окрас: ярко-рыжая спина, белое брюхо, тёмные лапы. Внешне лисица представляет собой зверя среднего размера с изящным туловищем на невысоких лапах, с вытянутой мордой, острыми ушами и длинным пушистым хвостом.</p>
+</div>
+</div>
+</div>
+<h2><a href="#">Áåãåìîòû</a></h2>
+<div>
+<p><b>Áåëêè</b> (ëàò. Sciurus) — ðîä ãðûçóíîâ ñåìåéñòâà áåëè÷üèõ. Êðîìå ñîáñòâåííî ðîäà Sciurus, áåëêàìè íàçûâàþò åù¸ öåëûé ðÿä ïðåäñòàâèòåëåé ñåìåéñòâà áåëè÷üèõ èç ðîäîâ áóðóíäóêîâûå áåëêè (Tamiasciurus), ïàëüìîâûå áåëêè (Funambulus) è ìíîãèõ äðóãèõ. ×òî êàñàåòñÿ ñîáñòâåííî ðîäà Sciurus, òî îí îáúåäèíÿåò â ñåáÿ îêîëî 30 âèäîâ, ðàñïðîñòðàí¸ííûõ â Åâðîïå, Ñåâåðíîé è Þæíîé Àìåðèêå è â óìåðåííîì ïîÿñå Àçèè.</p>
+<p>Èìååò óäëèí¸ííîå òåëî ñ ïóøèñòûì äëèííûì õâîñòîì, óøè äëèííûå, öâåò òåìíî-áóðûé ñ áåëûì áðþøêîì, èíîãäà ñåðûé (îñîáåííî çèìîé). Âîäÿòñÿ ïîâñþäó, êðîìå Àâñòðàëèè. Áåëêà ÿâëÿåòñÿ èñòî÷íèêîì öåííîãî ìåõà.
+</p>
+</div>
+<h2><a href="#">Îáåçüÿíû</a></h2>
+<div>
+<p><b>Îáûêíîâåííàÿ, èëè ðûæàÿ ëèñèöà</b> (ëàò. Vulpes vulpes) — õèùíîå ìëåêîïèòàþùåå ñåìåéñòâà ïñîâûõ, íàèáîëåå ðàñïðîñòðàí¸ííûé è ñàìûé êðóïíûé âèä ðîäà ëèñèö. Äëèíà òåëà 60—90 ñì, õâîñòà — 40—60 ñì, ìàññà — 6—10 êã.</p>
+<p>Îêðàñêà è ðàçìåðû ëèñèö ðàçëè÷íû â ðàçíûõ ìåñòíîñòÿõ; âñåãî íàñ÷èòûâàþò 40—50 ïîäâèäîâ, íå ó÷èòûâàÿ áîëåå ìåëêèõ ôîðì. Â îáùåì, ïðè ïðîäâèæåíèè íà ñåâåð ëèñèöû ñòàíîâÿòñÿ áîëåå êðóïíûìè è ñâåòëûìè, íà þã — ìåëêèìè è áîëåå òóñêëî îêðàøåííûìè. Â ñåâåðíûõ ðàéîíàõ è â ãîðàõ òàêæå ÷àùå âñòðå÷àþòñÿ ÷¸ðíî-áóðûå è äðóãèå ìåëàíèñòè÷åñêèå ôîðìû îêðàñêè ëèñèö. Íàèáîëåå ðàñïðîñòðàí¸ííûé îêðàñ: ÿðêî-ðûæàÿ ñïèíà, áåëîå áðþõî, ò¸ìíûå ëàïû.  Âíåøíå ëèñèöà ïðåäñòàâëÿåò ñîáîé çâåðÿ ñðåäíåãî ðàçìåðà ñ èçÿùíûì òóëîâèùåì íà íåâûñîêèõ ëàïàõ, ñ âûòÿíóòîé ìîðäîé, îñòðûìè óøàìè è äëèííûì ïóøèñòûì õâîñòîì.</p>
+</div>
+<h2><a href="#">Êàøàëîòû</a></h2>
+<div>
+<p><b>Îáûêíîâåííàÿ, èëè ðûæàÿ ëèñèöà</b> (ëàò. Vulpes vulpes) — õèùíîå ìëåêîïèòàþùåå ñåìåéñòâà ïñîâûõ, íàèáîëåå ðàñïðîñòðàí¸ííûé è ñàìûé êðóïíûé âèä ðîäà ëèñèö. Äëèíà òåëà 60—90 ñì, õâîñòà — 40—60 ñì, ìàññà — 6—10 êã.</p>
+<p>Îêðàñêà è ðàçìåðû ëèñèö ðàçëè÷íû â ðàçíûõ ìåñòíîñòÿõ; âñåãî íàñ÷èòûâàþò 40—50 ïîäâèäîâ, íå ó÷èòûâàÿ áîëåå ìåëêèõ ôîðì. Â îáùåì, ïðè ïðîäâèæåíèè íà ñåâåð ëèñèöû ñòàíîâÿòñÿ áîëåå êðóïíûìè è ñâåòëûìè, íà þã — ìåëêèìè è áîëåå òóñêëî îêðàøåííûìè. Â ñåâåðíûõ ðàéîíàõ è â ãîðàõ òàêæå ÷àùå âñòðå÷àþòñÿ ÷¸ðíî-áóðûå è äðóãèå ìåëàíèñòè÷åñêèå ôîðìû îêðàñêè ëèñèö. Íàèáîëåå ðàñïðîñòðàí¸ííûé îêðàñ: ÿðêî-ðûæàÿ ñïèíà, áåëîå áðþõî, ò¸ìíûå ëàïû.  Âíåøíå ëèñèöà ïðåäñòàâëÿåò ñîáîé çâåðÿ ñðåäíåãî ðàçìåðà ñ èçÿùíûì òóëîâèùåì íà íåâûñîêèõ ëàïàõ, ñ âûòÿíóòîé ìîðäîé, îñòðûìè óøàìè è äëèííûì ïóøèñòûì õâîñòîì.</p>
+</div>
+<h2><a href="#">Çàéöû</a></h2>
+<div>
+<p><b>Îáûêíîâåííàÿ, èëè ðûæàÿ ëèñèöà</b> (ëàò. Vulpes vulpes) — õèùíîå ìëåêîïèòàþùåå ñåìåéñòâà ïñîâûõ, íàèáîëåå ðàñïðîñòðàí¸ííûé è ñàìûé êðóïíûé âèä ðîäà ëèñèö. Äëèíà òåëà 60—90 ñì, õâîñòà — 40—60 ñì, ìàññà — 6—10 êã.</p>
+<p>Согласно палеонтологическим сведениям, род медведей появился 5-6 миллионов лет назад. Первым его представителем в настоящее время считают медведя Ursus minimus — относительно небольшое животное, чьи ископаемые останки найдены на территории Франции. Все современные четыре вида рода, а также ряд вымерших (таких, например, как пещерный медведь Ursus spelaeus) происходят от этрусского медведя (Ursus etruscus), жившего 2-1 миллиона лет назад.
+
+Самым молодым видом рода является белый медведь, который отделился от бурого медведя примерно 200 000 лет назад.</p>
+</div>
+</div>
+
+<script type="text/javascript">
+  
+
+$(window).scroll(function(){
+	  if($(this).scrollTop()>150){
+					$('#navigation').addClass('fixed');
+				}
+				else if ($(this).scrollTop()<150){
+					$('#navigation').removeClass('fixed');
+				}
+});
+
+</script>
+</body>
+</html>
